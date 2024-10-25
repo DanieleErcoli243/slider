@@ -12,3 +12,13 @@ slides.forEach((slide, index) => {
     slide.style.left = `${index * 100}%`;
 });
 
+// aggancio un ascoltatore di eventi a ognuno dei bottoni
+
+nextBtn.addEventListener('click', () => {
+    // aumento il contatore
+    counter++;
+})
+prevBtn.addEventListener('click', () => {
+    // aumento il contatore
+    counter--;
+})
