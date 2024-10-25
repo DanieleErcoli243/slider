@@ -1,6 +1,14 @@
 // creo una funzione che faccia scorrere le immagini
 
 const carousel = () => {
+    // imposto le condizioni per non interrompere il carosello
+    if (counter === slides.length) {
+        counter = 0;
+    }
+
+    if (counter < 0) {
+        counter = slides.length - 1;
+    }
     // faccio un ciclo sulle immagini
     slides.forEach(slide => {
         // manipolo lo style
