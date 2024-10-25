@@ -27,8 +27,10 @@ slides.forEach((slide, index) => {
 nextBtn.addEventListener('click', () => {
     // aumento il contatore
     counter++;
+    carousel();
 })
 prevBtn.addEventListener('click', () => {
     // aumento il contatore
     counter--;
+    carousel();
 })
