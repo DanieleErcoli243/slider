@@ -1,3 +1,13 @@
+// creo una funzione che faccia scorrere le immagini
+
+const carousel = () => {
+    // faccio un ciclo sulle immagini
+    slides.forEach(slide => {
+        // manipolo lo style
+        slide.style.transform = `translateX(-${counter * 100}%)`
+    });
+}
+
 // seleziono gli elementi dal DOM
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('.next');
